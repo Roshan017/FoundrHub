@@ -139,8 +139,8 @@
     color: var(--black);
   }
 
-  .text-26-semibold {
-    @apply font-semibold text-[26px];
+  .text-24-semibold {
+    @apply font-semibold text-[24px];
     color: var(--black);
   }
 
@@ -299,13 +299,19 @@
     box-shadow: var(--shadow-200);
   }
 
+  .startup-card:hover {
+    border-color: var(--primary_pink);
+    box-shadow: var(--shadow-300);
+    background-color: var(--primary_white-100);
+  }
+
   .startup-card_date {
     @apply font-medium text-[16px] px-4 py-2 rounded-full;
     background-color: var(--primary_white-100);
   }
 
   .startup-card_desc {
-    @apply font-normal text-[16px] line-clamp-2 my-3 break-all;
+    @apply font-semibold  text-[16px] line-clamp-2 my-3 break-all;
     color: var(--black);
   }
 
@@ -314,9 +320,7 @@
   }
 
   .startup-card_btn {
-    @apply rounded-full font-medium text-[16px] px-5 py-3;
-    background-color: var(--black);
-    color: var(--white);
+    @apply rounded-full font-medium text-[16px] px-5 py-3 border-2 border-black;
   }
 
   .startup-card_skeleton {
